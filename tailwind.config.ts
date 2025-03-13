@@ -1,3 +1,4 @@
+
 import type { Config } from "tailwindcss";
 
 export default {
@@ -61,7 +62,17 @@ export default {
 					'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
+				},
+				agency: {
+					purple: {
+						DEFAULT: '#2A0E58',
+						light: '#3A1A78',
+						dark: '#1A0538'
+					}
 				}
+			},
+			fontFamily: {
+				'jakarta': ['"Plus Jakarta Sans"', 'sans-serif'],
 			},
 			borderRadius: {
 				lg: 'var(--radius)',
