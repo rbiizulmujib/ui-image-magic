@@ -11,7 +11,7 @@ const Navbar = () => {
   };
 
   return <nav className="relative py-4 px-6 md:px-12 lg:px-20 flex flex-wrap justify-between items-center bg-[#280049]/[0.40]">
-      <div className="flex items-center justify-between w-full lg:w-auto">
+      <div className="flex flex-column items-center justify-between w-full lg:w-auto">
         <Link to="/" className="flex items-center gap-2">
           <svg width="163" height="40" viewBox="0 0 163 40" fill="none" xmlns="http://www.w3.org/2000/svg">
             <rect width="40" height="40" rx="20" fill="white" />
