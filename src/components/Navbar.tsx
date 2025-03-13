@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
@@ -46,7 +47,7 @@ const Navbar = () => {
         </div>
         
         <div className="hidden md:block">
-          <Button className="bg-indigo-600 hover:bg-indigo-700 text-white rounded-full">
+          <Button className="flex flex-row justify-center items-center px-6 py-2 w-[100px] h-12 bg-[#7103FD] border border-white shadow-[0px_0px_11px_#AE70FC] rounded-[10px]">
             Sign in
           </Button>
         </div>
