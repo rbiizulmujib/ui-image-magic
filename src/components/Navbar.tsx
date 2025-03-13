@@ -34,12 +34,7 @@ const Navbar = () => {
         <Button variant="outline" className="text-white border-purple-600 bg-agency-purple-light hover:bg-agency-purple rounded-[10px]">
           <span>🔥 Flash Sale</span>
         </Button>
-        <div className='svg-line'>
-        <svg width="2" height="34" viewBox="0 0 2 34" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M1 0V34" stroke="white"/>
-</svg>
-
-        </div>
+     
         <div className="relative">
           <Button variant="ghost" className="p-3 bg-[#F1E6FF] text-white hover:bg-[#F1E6FF]/90 rounded-full">
             <svg width="28" height="26" viewBox="0 0 28 26" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -49,7 +44,12 @@ const Navbar = () => {
           </Button>
           <span className="absolute -top-1 -right-1 bg-red-500 text-xs text-white rounded-full w-5 h-5 flex items-center justify-center">5</span>
         </div>
-        
+        <div className='svg-line'>
+        <svg width="2" height="34" viewBox="0 0 2 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M1 0V34" stroke="white"/>
+</svg>
+
+        </div>
         <div className="hidden md:block">
           <Button className="flex flex-row justify-center items-center px-6 py-2 w-[100px] h-12 bg-[#7103FD] border border-white shadow-[0px_0px_11px_#AE70FC] rounded-[10px]">
             Sign in
