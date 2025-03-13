@@ -31,11 +31,15 @@ const Navbar = () => {
       </div>
       
       <div className="flex items-center gap-4">
-        <Button variant="outline" className="text-white border-purple-600 bg-agency-purple-light hover:bg-agency-purple rounded-full">
-          <Flame className="mr-2 h-4 w-4" />
-          <span>Flash Sale</span>
+        <Button variant="outline" className="text-white border-purple-600 bg-agency-purple-light hover:bg-agency-purple rounded-[10px]">
+          <span>🔥 Flash Sale</span>
         </Button>
-        
+        <div className='svg-line'>
+        <svg width="2" height="34" viewBox="0 0 2 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M1 0V34" stroke="white"/>
+</svg>
+
+        </div>
         <div className="relative">
           <Button variant="ghost" className="p-3 bg-[#F1E6FF] text-white hover:bg-[#F1E6FF]/90 rounded-full">
             <svg width="28" height="26" viewBox="0 0 28 26" fill="none" xmlns="http://www.w3.org/2000/svg">
