@@ -6,7 +6,7 @@ import { ArrowRight, Flame } from 'lucide-react';
 const Hero = () => {
   return <div className="w-full px-6 md:px-12 lg:px-20 pt-10 md:pt-16 pb-20 md:pb-32 flex flex-col md:flex-row items-center justify-between">
       <div className="max-w-3xl mr-[100px]">
-        <h1 className="text-4xl md:text-5xl lg:text-7xl font-extrabold text-white mb-6">
+        <h1 className="text-4xl md:text-5xl lg:text-7xl font-medium text-white mb-6">
           Premium Agency<br />for Creatives.
         </h1>
         <p className="text-xl md:text-2xl text-white/80 mb-10 max-w-2xl leading-relaxed">
