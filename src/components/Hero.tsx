@@ -15,7 +15,7 @@ const Hero = () => {
         
         <div className="flex flex-col sm:flex-row gap-4">
           <Button variant="outline" className="text-white border-purple-600 bg-agency-purple-light hover:bg-agency-purple h-auto rounded-[10px] py-[12px] px-[48px]">
-            <span className="text-base">Flash Sale</span>
+            <span className="text-base">🔥 Flash Sale</span>
           </Button>
           
           <Button className="bg-white text-agency-purple-dark hover:bg-white/90 h-auto rounded-[10px] px-[48px] py-[12px]">
