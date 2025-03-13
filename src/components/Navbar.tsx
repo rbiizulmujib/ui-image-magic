@@ -12,8 +12,8 @@ const Navbar = () => {
 
   return (
     <nav className="relative py-4 bg-[#280049]/[0.40]">
-      <div className="container mx-auto max-w-[1440px] px-6 md:px-12 lg:px-20">
-        <div className="flex items-center justify-between w-full gap-4">
+      <div className="container mx-auto max-w-[1440px] px-6 md:px-12 lg:px-20 flex justify-between items-center">
+        <div className="flex items-center md:w-full w-full lg:w-auto gap-4">
           <div className="flex-1 lg:flex-initial flex justify-start">
         <Link to="/" className="flex items-center gap-2">
           <svg width="163" height="40" viewBox="0 0 163 40" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -40,8 +40,8 @@ const Navbar = () => {
         </div>
         <div className={`${
         isOpen ? 'flex' : 'hidden'
-      } lg:flex flex-col lg:flex-row items-center justify-center gap-8 w-full absolute lg:static top-full left-0 right-0 bg-[#280049]/[0.95] lg:bg-transparent py-8 px-6 lg:px-0 mt-4 lg:mt-8 z-50 border-t lg:border-t-0 border-purple-600/20`}>
-        <div className="w-full lg:w-auto flex flex-col lg:flex-row items-center gap-6">
+      } lg:flex flex-col lg:flex-row justify-end gap-8 w-full absolute lg:static top-full left-0 right-0 bg-[#280049]/[0.95] lg:bg-transparent px-6 lg:px-0 z-50 border-t lg:border-t-0 border-purple-600/20`}>
+        <div className="w-full lg:w-full flex flex-col lg:flex-row items-center justify-end gap-6">
           <Link to="/products" className="text-white hover:text-white/80 transition-colors font-medium w-full lg:w-auto text-center py-3 lg:py-0">
             Products
           </Link>
