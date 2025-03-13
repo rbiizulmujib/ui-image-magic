@@ -4,7 +4,7 @@ import { Button } from '@/components/ui/button';
 import { ArrowRight, Flame } from 'lucide-react';
 
 const Hero = () => {
-  return <div className="w-full px-6 md:px-12 lg:px-20 pt-10 md:pt-16 pb-20 md:pb-32 flex flex-col md:flex-row items-center justify-between">
+  return <div className="w-full px-6 md:px-12 lg:px-20 my-[120px] flex flex-col md:flex-row items-center justify-between">
       <div className="max-w-3xl mr-[100px]">
         <h1 className="text-4xl md:text-5xl lg:text-7xl font-medium text-white mb-6">
           Premium Agency<br />for Creatives.

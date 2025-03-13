@@ -1,11 +1,17 @@
 
-import React from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
-import { Flame } from 'lucide-react';
+import { Menu, X } from 'lucide-react';
 const Navbar = () => {
-  return <nav className="py-4 px-6 md:px-12 lg:px-20 flex justify-between items-center bg-[#280049]/[0.40]">
-      <div className="flex items-center">
+  const [isOpen, setIsOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setIsOpen(!isOpen);
+  };
+
+  return <nav className="relative py-4 px-6 md:px-12 lg:px-20 flex flex-wrap justify-between items-center bg-[#280049]/[0.40]">
+      <div className="flex items-center justify-between w-full lg:w-auto">
         <Link to="/" className="flex items-center gap-2">
           <svg width="163" height="40" viewBox="0 0 163 40" fill="none" xmlns="http://www.w3.org/2000/svg">
             <rect width="40" height="40" rx="20" fill="white" />
@@ -17,7 +23,21 @@ const Navbar = () => {
       
 
       
-      <div className="flex items-center gap-4">
+      <button
+        className="lg:hidden ml-auto"
+        onClick={toggleMenu}
+        aria-label="Toggle menu"
+      >
+        {isOpen ? (
+          <X className="h-6 w-6 text-white" />
+        ) : (
+          <Menu className="h-6 w-6 text-white" />
+        )}
+      </button>
+
+      <div className={`${
+        isOpen ? 'flex' : 'hidden'
+      } lg:flex flex-col lg:flex-row items-center gap-6 w-full lg:w-auto absolute lg:relative top-full left-0 right-0 bg-[#280049]/[0.95] lg:bg-transparent p-6 lg:p-0 mt-4 lg:mt-0 z-50`}>
       <Link to="/products" className="text-white hover:text-white/80 transition-colors font-medium">
           Products
         </Link>
@@ -30,7 +50,7 @@ const Navbar = () => {
         <Link to="/community" className="text-white hover:text-white/80 transition-colors font-medium">
           Community
         </Link>
-        <Button variant="outline" className="text-white border-purple-600 bg-agency-purple-light hover:bg-agency-purple rounded-[10px]">
+        <Button variant="outline" className="text-white border-purple-600 bg-agency-purple-light rounded-[10px]">
           <span>🔥 Flash Sale</span>
         </Button>
      
@@ -49,7 +69,7 @@ const Navbar = () => {
 </svg>
 
         </div>
-        <div className="hidden md:block">
+        <div className="block">
           <Button className="flex flex-row justify-center items-center px-6 py-2 w-[100px] h-12 bg-[#7103FD] border border-white shadow-[0px_0px_11px_#AE70FC] rounded-[10px]">
             Sign in
           </Button>
