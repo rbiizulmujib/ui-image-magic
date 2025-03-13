@@ -104,7 +104,12 @@
 }
 
 .bg-agency-gradient {
-  background: linear-gradient(135deg, #3A1A78 0%, #1A0538 100%);
+  background-color: #280049;
+  background-image: url(https://demo.mujibanget.com/wp-content/uploads/2025/02/background-img.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 }
 
 .agency-logo-outline {
