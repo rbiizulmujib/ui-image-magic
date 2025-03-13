@@ -15,8 +15,10 @@ const Navbar = () => {
         </Link>
       </div>
       
-      <div className="hidden md:flex items-center gap-8">
-        <Link to="/products" className="text-white hover:text-white/80 transition-colors font-medium">
+
+      
+      <div className="flex items-center gap-4">
+      <Link to="/products" className="text-white hover:text-white/80 transition-colors font-medium">
           Products
         </Link>
         <Link to="/live-class" className="text-white hover:text-white/80 transition-colors font-medium">
@@ -28,9 +30,6 @@ const Navbar = () => {
         <Link to="/community" className="text-white hover:text-white/80 transition-colors font-medium">
           Community
         </Link>
-      </div>
-      
-      <div className="flex items-center gap-4">
         <Button variant="outline" className="text-white border-purple-600 bg-agency-purple-light hover:bg-agency-purple rounded-[10px]">
           <span>🔥 Flash Sale</span>
         </Button>
