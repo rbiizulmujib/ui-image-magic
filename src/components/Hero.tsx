@@ -9,7 +9,7 @@ const Hero = () => {
         <h1 className="text-4xl md:text-5xl lg:text-7xl font-medium text-white mb-6">
           Premium Agency<br />for Creatives.
         </h1>
-        <p className="text-xl md:text-2xl text-white/80 mb-10 max-w-2xl leading-relaxed">
+        <p className="font-normal text-2xl leading-[140%] text-white mb-10">
           We specialize in crafting unique digital presence that help businesses grow and stand out in their industries.
         </p>
         
