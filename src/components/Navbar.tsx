@@ -2,7 +2,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
-import { Flame, ShoppingCart } from 'lucide-react';
+import { Flame } from 'lucide-react';
 
 const Navbar = () => {
   return (
@@ -39,8 +39,11 @@ const Navbar = () => {
         </Button>
         
         <div className="relative">
-          <Button variant="ghost" className="p-2 text-white hover:bg-white/10 rounded-full">
-            <ShoppingCart className="h-5 w-5" />
+          <Button variant="ghost" className="p-3 bg-[#F1E6FF] text-white hover:bg-[#F1E6FF]/90 rounded-full">
+            <svg width="28" height="26" viewBox="0 0 28 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M3.49145 6C1.57221 6 0.146549 7.77725 0.562891 9.65079L3.32597 22.0847C3.83435 24.3723 5.86341 26 8.20691 26H19.7895C22.133 26 24.1621 24.3723 24.6705 22.0847L27.4335 9.65079C27.8499 7.77725 26.4242 6 24.505 6H3.49145ZM19.9985 13H7.99854V15H19.9985V13ZM17.9985 17H9.99854V19H17.9985V17Z" fill="#7103FD"/>
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M10.9116 1.40603L6.91161 10.406L5.08398 9.59375L9.08398 0.59375L10.9116 1.40603ZM18.9116 0.59375L22.9116 9.59375L21.084 10.406L17.084 1.40603L18.9116 0.59375Z" fill="#7103FD"/>
+            </svg>
           </Button>
           <span className="absolute -top-1 -right-1 bg-red-500 text-xs text-white rounded-full w-5 h-5 flex items-center justify-center">5</span>
         </div>
