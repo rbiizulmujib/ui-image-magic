@@ -4,8 +4,8 @@ import { Button } from '@/components/ui/button';
 import { ArrowRight, Flame } from 'lucide-react';
 
 const Hero = () => {
-  return <div className="w-full px-6 md:px-12 lg:px-20 my-[120px] flex flex-col md:flex-row items-center justify-between">
-      <div className="max-w-3xl mr-[100px]">
+  return <div className="w-full px-6 md:px-12 lg:px-20 my-[120px] flex flex-col-reverse md:flex-row items-center justify-between">
+      <div className="max-w-3xl md:mr-[100px] mt-16 md:mt-0">
         <h1 className="text-4xl md:text-5xl lg:text-7xl font-medium text-white mb-6">
           Premium Agency<br />for Creatives.
         </h1>
@@ -25,7 +25,7 @@ const Hero = () => {
         </div>
       </div>
       
-      <div className="mt-16 md:mt-0 max-w-md lg:max-w-lg xl:max-w-xl">
+      <div className="max-w-md lg:max-w-lg xl:max-w-xl">
         <svg width="370px" height="350px" viewBox="0 0 373 351" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path d="M244.949 346.999C316.615 333.641 371.842 271.534 373.144 196.516H245.077C275.22 208.193 296.594 237.467 296.594 271.733C296.594 306.047 275.16 335.356 244.949 346.999Z" fill="white" fillOpacity="0.1"/>
           <path d="M186.735 346.908C115.305 333.362 60.3218 271.365 59.0235 196.516H186.842C156.699 208.193 135.325 237.467 135.325 271.733C135.325 305.959 156.649 335.204 186.735 346.908Z" fill="white" fillOpacity="0.1"/>
